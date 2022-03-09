@@ -1,82 +1,111 @@
 <!DOCTYPE html>
 <html lang="es-Es">
+
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" type="text/css" href="css/normalize.css">
+	<link rel="stylesheet" type="text/css" href="css/estilos.css">
 	<link rel="icon" type="image/x-icon" href="img/jeringa.png">
 	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css">
+	<script src="https://kit.fontawesome.com/74a1aab293.js" crossorigin="anonymous"></script>
+	<script src="https://unpkg.com/boxicons@2.1.2/dist/boxicons.js"></script>
 	<title>Forja Empresas</title>
 </head>
+
 <body>
-	<div>
-		<a href="login.html" target="_self">Iniciar Sesión <img src="img/man-user.svg" alt="login" style="width:30px"></a>
-	</div>
-	<div>
-		<img src="img/call.png" alt="contact ud" width="30px"> <p>+5717447050</p>
-		<img src="img/placeholder.png" alt="location" width="30px"> <p>Carrera 21 # 98-71 Segundo piso<br>Bogotá-Colombia</p>
-	</div>
-	<div>
-		<img src="img/logoforja.png" alt="logo Forja Empresas">
-		<img src="img/jeringa.png" alt="jeringa" style="width:90px">	
-		<img src="img/linea.png" alt="lineliveimg">
-	</div>
-	<div>
-		<img src="img/medico.png" alt="doc">
-		<img src="img/franja.svg" alt="franja">
-	</div>
-	<div>
+	<header id="header">
+		<section class="forja">
+			<div class="logo">
+				<img src="img/logoforja.png" alt="logo Forja Empresas">
+			</div>
+			<span class="logo1"><i class="fa-solid fa-syringe fa-3x"></i></span>
+		</section>
+		<section class="inicio">
+			<div class="header">
+				<div class="phone"><img src="img/bxs-phone 1.svg">
+					<p>+5717447050</p>
+				</div>
+				<div class="location"><i class="fa-solid fa-location-dot fa-xs"></i>
+					<p>Carrera 21 # 98-71 Segundo piso
+						Bogotá-Colombia</p>
+				</div>
+				<div class="boton">
+					<button class="login"><a href="login.html" target="_self">Iniciar Sesión <i
+								class="fa-solid fa-user"></i></a></button>
+				</div>
+			</div>
+			<div class="linea">
+				<img src="img/linea.png" alt="lineliveimg">
+			</div>
+		</section>
+	</header>
+	<section class="covid">
 		<h1>Unidos ganaremos la batalla</h1>
 		<h2>Covid-19</h2>
-		<a href="login.html" target="_self">Iniciar Sesión <img src="img/man-user.svg" alt="login" style="width:30px"></a>
+		<div class="boton">
+			<button class="login"><a href="login.html" target="_self">Iniciar Sesión <i
+						class="fa-solid fa-user"></i></a></button>
+		</div>
+	</section>
+	<div class="franja">
+		<img src="img/franja.svg" alt="franja">
 	</div>
-	<div>
-		<table>
-		<tr>
-			<td>
-				<img src="img/flechaderecha.svg" alt="row"> <p>Signos compatibles con Covid-19</p>
-			</td>
-			<td>
-				<img src="img/question-circle-solid.svg" alt="question"> <p>¿Qué hacer?</p>
-			</td>
-		</tr>
-		<tr>
-			<td>
-				<dl>
-					<dt><img src="img/check.svg" alt="check">Fiabre de 37.5° o más.</dt>
-					<dt><img src="img/check.svg" alt="check">Dolor de garganta.</dt>
-					<dt><img src="img/check.svg" alt="check">Tos y dificultad respiratoria.</dt>
-					<dt><img src="img/check.svg" alt="check">Dolor de cabeza.</dt>
-					<dt><img src="img/check.svg" alt="check">Vomito y diarrea</dt>
-				</dl>
-			</td>
-			<td>
-				<p>
-					Si diagnósticas más de dos sintomas, aisla de<br>inmediato al paciente y procede a realizar cuanto<br>antes el hisopado para confirmar o descartar<br>COVID 19.
-				</p>
-				<a href=https://www.campusvirtualsp.org/es/cursos-virtuales-covid-19 target="_blank"><img src="img/oms.png" alt="OMS" style="width:100px;height: 100px;"></a><br>
-				<a href=https://www.campusvirtualsp.org/es/cursos-virtuales-covid-19 target="_blank">Curso online nuevo coronavirus OMS</a>
-			</td>
-		</tr>
-		</table>
-
-		<div>
+	<main class="transpsintomas">
+		<div class="fondosintomas">
+			<section class="sintomas">
+				<div class="signos">
+					<img src="img/flechaderecha.svg" alt="row">
+					<h2>Signos compatibles con Covid-19</h2>
+				</div>
+				<div class="chulos">
+					<dt class="check"><img src="img/check.svg" alt="check">Fiebre de 37.5° o más.</dt>
+					<dt class="check"><img src="img/check.svg" alt="check">Dolor de garganta.</dt>
+					<dt class="check"><img src="img/check.svg" alt="check">Tos y dificultad respiratoria.</dt>
+					<dt class="check"><img src="img/check.svg" alt="check">Dolor de cabeza.</dt>
+					<dt class="check"><img src="img/check.svg" alt="check">Vomito y diarrea</dt>
+				</div>
+			</section>
+			<section class="precaucion">
+				<div class="quehacer">
+					<img src="img/question-circle-solid.svg" alt="question">
+					<h2>¿Qué hacer?</h2>
+				</div>
+				<div class="oms">
+					<p>
+						Si diagnósticas más de dos sintomas, aisla de inmediato al paciente y procede a realizar cuanto
+						antes el hisopado para confirmar o descartar COVID 19.
+					</p>
+					<a href=https://www.campusvirtualsp.org/es/cursos-virtuales-covid-19 target="_blank"><img
+							src="img/oms.png" alt="OMS"></a>
+					<a href=https://www.campusvirtualsp.org/es/cursos-virtuales-covid-19 target="_blank" class="curso">Curso online
+						nuevo coronavirus OMS</a>
+				</div>
+			</section>
+		</div>
+	</main>
+	<!--seccion de enlaces-->
+	<main class="fondorecom">
+		<div class="recomendacion1">
 			<p>Enfermedad por coronavirus (COVID-19): Accesibilidad y asignación de las vacunas</p>
 		</div>
-		<div>
+		<div class="recomendacion">
 			<p>Seguridad de las vacunas contra el COVID-19|CDC</p>
 		</div>
-		<div>
+		<div class="recomendacion">
 			<p>Luego de la vacunación ¿Qué sintomas se pueden presentar?</p>
 		</div>
-		<div>
+		<div class="recomendacion">
 			<p>Lineamiento técnico para la gestión de residuos de vacunación-Covid 19</p>
 		</div>
-		<div>
+		<div class="recomendacion">
 			<p>Recomendaciones generales al tener contacto con personas infectadas</p>
 		</div>
-		<footer><p>©2021 FORJA EMPRESAS</p></footer>
-
-	</div>
+	</main>
+	<!--Footer-->
+	<footer class="footer">
+		<p>©2021 FORJA EMPRESAS</p>
+	</footer>
 </body>
+
 </html>

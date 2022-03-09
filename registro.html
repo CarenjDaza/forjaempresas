@@ -1,12 +1,15 @@
 <!DOCTYPE html>
 <html lang="es-Es">
+
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" type="text/css" href="css/estilos.css">
 	<link rel="stylesheet" type="text/css" href="css/normalize.css">
 	<link rel="icon" type="image/x-icon" href="img/jeringa.png">
 	<title>Forja Empresas</title>
 </head>
+
 <body>
 
 	<div>
@@ -22,15 +25,15 @@
 		<form action="">
 			<input type="date" id="calendar" name="calendar">
 			<input type="text" name="register" id="register" placeholder="N registro">
-			<p><img src="img/man-user.svg" alt="user" style="width: 32px;">DATOS DEL PACIENTE</p>
-				<table>
-					<tr>
-						<td><input type="text" id="name" name="name" placeholder="Escribe tu nombre"></td>
-						<td><input type="text" id="lastname" name="lastname" placeholder="Apellidos"></td>
-					</tr>
-					<tr>
-						<td><input type="text" id="identify" name="identify" placeholder="Número de identificación"></td>
-						<td><select name="typeID" id="typeID">
+			<p><img src="img/man-user.svg" alt="user">DATOS DEL PACIENTE</p>
+			<table>
+				<tr>
+					<td><input type="text" id="name" name="name" placeholder="Escribe tu nombre"></td>
+					<td><input type="text" id="lastname" name="lastname" placeholder="Apellidos"></td>
+				</tr>
+				<tr>
+					<td><input type="text" id="identify" name="identify" placeholder="Número de identificación"></td>
+					<td><select name="typeID" id="typeID">
 							<option hidden selected>Tipo de documento</option>
 							<option value="CC">Cedula de ciudadania</option>
 							<option value="PS">Pasaporte</option>
@@ -38,17 +41,17 @@
 							<option value="TI">Tarjeta de identidad</option>
 							<option value="RC">Registro civil</option>
 						</select></td>
-					</tr>
-					<tr>
-						<td><input type="date" id="calendar2" name="calendar2"></td>
-						<td><input type="text" id="age" name="age" placeholder="Edad"></td>
-					</tr>
-				</table>
+				</tr>
+				<tr>
+					<td><input type="date" id="calendar2" name="calendar2"></td>
+					<td><input type="text" id="age" name="age" placeholder="Edad"></td>
+				</tr>
+			</table>
 
-			<p><img src="img/geo.svg" alt="user" style="width: 32px;">INFORMACIÓN DE CONTACTO</p>
-				<table>
-					<tr>
-						<td><select name="Departamento" id="Departamento">
+			<p><img src="img/geo.svg" alt="user">INFORMACIÓN DE CONTACTO</p>
+			<table>
+				<tr>
+					<td><select name="Departamento" id="Departamento">
 							<option hidden selected>Departamento de residencia</option>
 							<option value="Cundinamarca">Cundinamarca</option>
 							<option value="Choco">Choco</option>
@@ -56,7 +59,7 @@
 							<option value="Tolima">Tolima</option>
 							<option value="Meta">Meta</option>
 						</select></td>
-						<td><select name="Municipio" id="Municipio">
+					<td><select name="Municipio" id="Municipio">
 							<option hidden selected>Municipio de residencia</option>
 							<option value="Bogota">Bogotá</option>
 							<option value="Caceres">Caceres</option>
@@ -64,51 +67,55 @@
 							<option value="Barranca">Barranca de upia</option>
 							<option value="Soacha">Soacha</option>
 						</select></td>
-					</tr>
-					<tr>
-						<td><input type="text" id="address" name="address" placeholder="Dirección"></td>
-						<td><input type="email" id="email" name="email" placeholder="Correo"></td>
-					</tr>
-					<tr>
-						<td><input type="tel" id="phone" name="phone" placeholder="Teléfono fijo"></td>
-						<td><input type="tel" id="movil" name="movil" placeholder="Celular"></td>
-					</tr>
-				</table>
-			<p><img src="img/latido-del-corazon.svg" alt="user" style="width: 32px;">ESTADO DE SALUD</p>
-				<table>
-					<tr>
-						<td>
-							<select name="preexistencia" id="preexistencia">
-								<option hidden selected>Preexistencias</option>
-								<option value="Y">Si</option>
-								<option value="N">No</option>
-							</select>
-						</td>
-						<td>
-							<select name="discapacidad" id="discapacidad">
-								<option hidden selected>Discapacidad</option>
-								<option value="Y">Si</option>
-								<option value="N">No</option>
-							</select>
-						</td>
-						<td>
-							<input type="text" name="alergia" id="alergia" placeholder="Alergias">
-						</td>
-					</tr>
-				</table>
-				<p>¿El paciente se ha realizado la prueba del covid con anterioridad y esta ha salido positiva?</p>
-				<input type="radio" id="radio_si" name="radio" value="Y"> <label for="radio_si">Si</label>
-				<input type="radio" id="radio_no" name="radio" value="N"> <label for="radio_no">No</label>
-				<p>¿El paciente ha tenido un contacto estrecho o cercano con una persona confirmada o sospechosa COVID-19 en los ultimos 14 días?</p>
-				<input type="radio" id="radio_si2" name="radio2" value="Y"> <label for="radio_si2">Si</label>
-				<input type="radio" id="radio_no2" name="radio2" value="N"> <label for="radio_no2">No</label>				
-		
-		<div>
-			<input type="submit" value="Enviar">
-		</div>
-		
+				</tr>
+				<tr>
+					<td><input type="text" id="address" name="address" placeholder="Dirección"></td>
+					<td><input type="email" id="email" name="email" placeholder="Correo"></td>
+				</tr>
+				<tr>
+					<td><input type="tel" id="phone" name="phone" placeholder="Teléfono fijo"></td>
+					<td><input type="tel" id="movil" name="movil" placeholder="Celular"></td>
+				</tr>
+			</table>
+			<p><img src="img/latido-del-corazon.svg" alt="user">ESTADO DE SALUD</p>
+			<table>
+				<tr>
+					<td>
+						<select name="preexistencia" id="preexistencia">
+							<option hidden selected>Preexistencias</option>
+							<option value="Y">Si</option>
+							<option value="N">No</option>
+						</select>
+					</td>
+					<td>
+						<select name="discapacidad" id="discapacidad">
+							<option hidden selected>Discapacidad</option>
+							<option value="Y">Si</option>
+							<option value="N">No</option>
+						</select>
+					</td>
+					<td>
+						<input type="text" name="alergia" id="alergia" placeholder="Alergias">
+					</td>
+				</tr>
+			</table>
+			<p>¿El paciente se ha realizado la prueba del covid con anterioridad y esta ha salido positiva?</p>
+			<input type="radio" id="radio_si" name="radio" value="Y"> <label for="radio_si">Si</label>
+			<input type="radio" id="radio_no" name="radio" value="N"> <label for="radio_no">No</label>
+			<p>¿El paciente ha tenido un contacto estrecho o cercano con una persona confirmada o sospechosa COVID-19 en
+				los ultimos 14 días?</p>
+			<input type="radio" id="radio_si2" name="radio2" value="Y"> <label for="radio_si2">Si</label>
+			<input type="radio" id="radio_no2" name="radio2" value="N"> <label for="radio_no2">No</label>
+
+			<div>
+				<input type="submit" value="Enviar">
+			</div>
+
 		</form>
 	</div>
-	<footer><p>©2021 FORJA EMPRESAS</p></footer>
+	<footer>
+		<p>©2021 FORJA EMPRESAS</p>
+	</footer>
 </body>
+
 </html>
