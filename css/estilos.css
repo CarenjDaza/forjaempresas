@@ -15,11 +15,14 @@ body {
 }
 :root{
 	--rojo:#A40101;
-	--azulclaro: #2ca3ab;
+	--azulclaro: rgb(44, 163, 171);
 	--plata: #c4c4c4;
 	--naranja:#f3610e;
 	--morado:#1d1b45;
 	--blanco:#ffffff;
+	--negro:#000000;
+	--azulcielo: rgb(167, 217, 217);
+
 }
 #header{
 	max-height: 800px;
@@ -264,3 +267,89 @@ body {
 	padding-bottom: 30px;
 	margin-bottom: 8px;
 }
+/*login*/
+.body{
+	background-image: url(../img/10.png);
+
+}
+	
+	 #login{
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		height: 650px;
+			
+	 }
+	 .buttonlogin{
+		 background-color: var(--morado);
+		 border: 2px solid var(--azulclaro);
+		 padding: 8px;
+		 border-radius: 10px;
+		
+	 }
+	 .buttonlogin a{
+		 color: var(--blanco);
+		 text-decoration: none;
+		 font-size: 12px;
+		 font-weight: bold;
+	  
+	 }
+	 .form-login{
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		padding: 20px 0px;
+		background-color: var(--blanco);
+		border-radius: 50px;
+		box-shadow: 3px 3px 5px var(--negro);
+	 }
+	 .head{
+		background-color: var(--azulcielo);
+		padding: 50px 90px;
+		text-align: center;
+		border-radius: 50px 50px 0 0;
+		position:relative;
+		bottom: 20px;
+
+	}
+
+	 .form-group{
+		 display: flex;
+		 flex-direction: column;
+		 text-align: center;
+		 padding-bottom: 20px;
+		 line-height: 2;
+	 }
+	 .form-group label{
+		 font-size: 20px;
+	 }
+	 .form-group input{
+		 border-radius: 20px;
+		 border: 1px solid var(--azulclaro);
+		 background-color:rgba(167, 217, 217, 0.3);
+		 height: 45px;
+		 width: 370px;
+	 }
+	 .link{
+		 margin: 0;
+		 font-size:15px ;
+		 color: var(--negro);
+		 position: relative;
+		 bottom: 12px;
+	 }
+	 .btn-enviar{
+		 border-radius: 10px;
+		 background-color: var(--naranja);
+		 color: var(--blanco);
+		 padding: 8px 33px; 
+		 border: 1px solid var(--negro);
+	 }
+	.butl{
+		margin-bottom: 20px ;
+		position: relative;
+		left: 180px;
+	}
+	
+
+	
