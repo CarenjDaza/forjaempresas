@@ -649,7 +649,7 @@ body {
 	
 	/*registro*/
 	.registro{
-		border-radius: 8px;
+		
 		background-color: var(--morado);
 		color: var(--blanco);
 		text-align: center;
