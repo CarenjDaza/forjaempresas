@@ -350,6 +350,138 @@ body {
 		position: relative;
 		left: 180px;
 	}
-	
+	/*dashboard*/
+	.main{
+		display: flex;
+		height: 100%;
+		max-height: 618px;
+	}
+	.menudash{
+		background-color: var(--morado);
+		flex-basis: 20%;
+		display: flex;
+		flex-direction: column;
+		justify-content:center ;
+		height: 618px;
+	}
+	.logodash{
+		width: 200px;
+		margin: 20px;
+		padding: 2px;
+		margin-top: -100px;
+	}
+	.menuopc{
+		margin-top: 50px;
+	}
+	.opciones{
+		list-style: none;
+    	display: flex;
+    	flex-direction: column;  
+		background-color: var(--plata);
+		border: 1px solid var(--naranja);
+		align-items: center;
+		justify-content: center;
+		border-radius: 10px;
+		height: 55px;
+		margin: 10px 0;
+	}
+	.opciones a{
+		color: var(--negro);
+    	text-decoration: none;
+	}
+	.opciones img{
+		width: 20px;
+		margin: 10 auto;
+		position: relative;
+		left: 40px;
+	}
+	.opciones h4{
+		margin: 0;
+		padding: 0;
+	}
+	.cuerpodash{
+		flex-basis: 80%;
+		height: 600px;
+		background-color: #f5f1f1ee;
+	}
+	.usuario{
+		background: linear-gradient(60deg, #a59f9f, rgb(207, 202, 202) 50%, #b8b2b2);
+		display: flex;
+		justify-content: flex-end;
+		align-items: center;
+		width: 165px;
+		height: 50px;
+		padding: 5px;
+		margin-left:900px;
+		border-radius: 8px;
+	}
+	.usuario img{
+		width: 27px;
+		height: 30px;
+		border-radius: 50%;
+		background-color: var(--blanco);
+		border: 1px solid var(--naranja);
+		padding: 3px;
+		margin-right: 3px;
+	}
+	.guerreros{
+		float: right;
+		padding-top: 1px;
+		padding-right: 8px;
+		opacity: 38%;
+		height: 300px;
 
+	}
+	.cuerpo{
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+	}
 	
+	.cuerpo h1{
+		color: var(--naranja);
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		position:relative;
+		top: 50px;
+	}
+	.busqueda {
+
+		position: relative;
+		top: 120px;
+	}
+	.busqueda input{
+		width: 315px;
+		text-align: center;
+		background-color: #f5f1f1ee;
+		font-size: 17px;
+		padding-right: 3px;
+		border: none;
+		border-bottom: 1px solid var(--morado);
+	}
+	.busqueda button{
+		background-color: var(--morado);
+		border: 3px solid var(--azulclaro);
+		border-radius: 5px;
+		padding: 0;
+	}
+	.busqueda i{
+		width: 50px;
+		color:var(--blanco);
+		padding: 5px;
+	}
+	.franja1{
+		width: 1100px;
+		height: 100px;
+		position: relative;
+		top: 370px;
+		margin-bottom: 0;
+	}
+	.franja1 img{
+		flex-basis: 100%;
+		max-width: 100%;
+		max-height: 100%;
+

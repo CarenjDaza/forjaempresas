@@ -5,42 +5,55 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link rel="stylesheet" type="text/css" href="css/estilos.css">
 	<link rel="stylesheet" type="text/css" href="css/normalize.css">
-	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css">
+	<script src="https://kit.fontawesome.com/74a1aab293.js" crossorigin="anonymous"></script>
 	<link rel="icon" type="image/x-icon" href="img/jeringa.png">
 	<title>Forja Empresas</title>
 </head>
-<body>
-
-	<section>
-		<img src="img/logoforja.png" alt="logo Forja Empresas">
-		<a href="pacientes.html">
-			<img src="img/users.png" alt="users">
+<body class="main">
+	<section class="menudash">
+		<img src="img/logoforja.png" alt="logo Forja Empresas" class="logodash">
+		<article class="menuopc">
+		<div class="opciones">
+		<a href="pacientes.html" class="users">
+			<img src="img/users.png" alt="users" >
 			<h4>Pacientes</h4>
 		</a>
+		</div>
+		<div class="opciones">
+		<a href="index.html">
 			<img src="img/jeringuilla.png" alt="Jeringa">
 			<h4>Vacunación</h4>
+		</a>
+		</div>
+		<div class="opciones">
 		<a href="index.html">
 			<img src="img/power-off.png" alt="logoff">
 			<h4>Cerrar Sesión</h4>
 		</a>
+		</div>
+	</article>
 	</section>
-	<section>
-		<div>
+	<section class="cuerpodash">
+		<div class="usuario">
 			<img src="img/man-user.svg" alt="User"><p>Carolina Loaiza</p>
 		</div>
-		<div>
+		<div class="cuerpo">
 			<h1>BIENVENIDOS</h1>
-
-				<form action="pacientes.html" target="_self">
+				<form action="pacientes.html" target="_self" class="busqueda">
 				<input type="numeric" name="document" id="document" placeholder="Digite el numero de documento">
-				<button id="boton"><img src="img/search.png" alt="search"></button>
-				<a href="dashboard.html"><img src="img/refresh.png" alt="refresh"></a>
+				<button type="submit">
+					<a href="pacientes.html"><i class="fa-solid fa-magnifying-glass" fa="6x"></i></a>
+				</button>
+				<button type="submit">
+					<a href="dashboard.html"><i class="fa-solid fa-arrow-rotate-right"></i></a>
+				</button>
 				</form>
 		</div>
+		<img src="img/franja.svg" alt="Franjalogo" class="franja1"> 
+		<img src="img/guerreros.png" alt="logo guerreros" class="guerreros">
 		
-
-		<img src="img/guerreros.png" alt="logo guerreros">
-		<img src="img/franja.svg" alt="Franjalogo">
 	</section>
 </body>
 </html>
+
+<!---->
