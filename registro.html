@@ -7,115 +7,115 @@
 	<link rel="stylesheet" type="text/css" href="css/estilos.css">
 	<link rel="stylesheet" type="text/css" href="css/normalize.css">
 	<link rel="icon" type="image/x-icon" href="img/jeringa.png">
+	<script src="https://kit.fontawesome.com/74a1aab293.js" crossorigin="anonymous"></script>
 	<title>Forja Empresas</title>
 </head>
 
 <body>
-
-	<div>
+	<section class="headerpaciente">
 		<img src="img/logoforja.png" alt="logo Forja Empresas">
-		<a href="pacientes.html"><img src="img/house.png" alt="Home"></a>
-		<a href="index.html"><img src="img/power-off.png" alt="logoff"></a>
-		<img src="img/franja.svg" alt="Franjalogo">
-	</div>
-	<div>
-		<p>REGISTRO USUSARIO NUEVO</p>
-	</div>
-	<div>
-		<form action="">
-			<input type="date" id="calendar" name="calendar">
-			<input type="text" name="register" id="register" placeholder="N registro">
-			<p><img src="img/man-user.svg" alt="user">DATOS DEL PACIENTE</p>
-			<table>
-				<tr>
-					<td><input type="text" id="name" name="name" placeholder="Escribe tu nombre"></td>
-					<td><input type="text" id="lastname" name="lastname" placeholder="Apellidos"></td>
-				</tr>
-				<tr>
-					<td><input type="text" id="identify" name="identify" placeholder="Número de identificación"></td>
-					<td><select name="typeID" id="typeID">
+		<div class="iniciopac">
+			<a href="dashboard.html"><img src="img/house.png" alt="Home"></a>
+			<a href="index.html"><img src="img/power-off.png" alt="logoff"></a>
+		</div>
+	</section id="paciente">
+	<img src="img/franja.png" alt="Franjalogo" class="franja2">
+	<section>
+		<div class="registro">
+			<h3>REGISTRO USUARIO NUEVO</h3>
+		</div>
+		<div>
+			<form action="#" id="form-register">
+				<div class="form-register">
+
+					<input type="date" id="calendar" name="calendar" class="inicio-form">
+					<input type="text" name="register" id="register" placeholder="N registro" class="inicio-form1">
+					<div class="title-section">
+						<i class="fa-solid fa-user"></i>
+						<P>DATOS DEL PACIENTE</p>
+					</div>
+					<div class="seccion">
+						<input type="text" id="name" name="name" placeholder="Escribe tu nombre" class="secciones">
+						<input type="text" id="lastname" name="lastname" placeholder="Apellidos" class="secciones">
+						<input type="text" id="identify" name="identify" placeholder="Número de identificación"
+							class="secciones">
+						<select name="typeID" id="typeID" class="secciones especial">
 							<option hidden selected>Tipo de documento</option>
 							<option value="CC">Cedula de ciudadania</option>
 							<option value="PS">Pasaporte</option>
 							<option value="CE">Cedula de extranjeria</option>
 							<option value="TI">Tarjeta de identidad</option>
 							<option value="RC">Registro civil</option>
-						</select></td>
-				</tr>
-				<tr>
-					<td><input type="date" id="calendar2" name="calendar2"></td>
-					<td><input type="text" id="age" name="age" placeholder="Edad"></td>
-				</tr>
-			</table>
-
-			<p><img src="img/geo.svg" alt="user">INFORMACIÓN DE CONTACTO</p>
-			<table>
-				<tr>
-					<td><select name="Departamento" id="Departamento">
+						</select>
+						<input type="date" id="calendar2" name="calendar2" class="secciones especial">
+						<input type="text" id="age" name="age" placeholder="Edad" class="secciones">
+					</div>
+					<div class="title-section">
+						<i class="fa-solid fa-location-dot"></i>
+						<p>INFORMACIÓN DE CONTACTO</p>
+					</div>
+					<div class="seccion">
+						<select name="Departamento" id="Departamento" class="secciones especial">
 							<option hidden selected>Departamento de residencia</option>
 							<option value="Cundinamarca">Cundinamarca</option>
 							<option value="Choco">Choco</option>
 							<option value="Guajira">Guajira</option>
 							<option value="Tolima">Tolima</option>
 							<option value="Meta">Meta</option>
-						</select></td>
-					<td><select name="Municipio" id="Municipio">
+						</select>
+						<select name="Municipio" id="Municipio" class="secciones especial">
 							<option hidden selected>Municipio de residencia</option>
 							<option value="Bogota">Bogotá</option>
 							<option value="Caceres">Caceres</option>
 							<option value="Caucacia">Caucacia</option>
 							<option value="Barranca">Barranca de upia</option>
 							<option value="Soacha">Soacha</option>
-						</select></td>
-				</tr>
-				<tr>
-					<td><input type="text" id="address" name="address" placeholder="Dirección"></td>
-					<td><input type="email" id="email" name="email" placeholder="Correo"></td>
-				</tr>
-				<tr>
-					<td><input type="tel" id="phone" name="phone" placeholder="Teléfono fijo"></td>
-					<td><input type="tel" id="movil" name="movil" placeholder="Celular"></td>
-				</tr>
-			</table>
-			<p><img src="img/latido-del-corazon.svg" alt="user">ESTADO DE SALUD</p>
-			<table>
-				<tr>
-					<td>
-						<select name="preexistencia" id="preexistencia">
+						</select>
+						<input type="text" id="address" name="address" placeholder="Dirección" class="secciones">
+						<input type="email" id="email" name="email" placeholder="Correo" class="secciones">
+						<input type="tel" id="phone" name="phone" placeholder="Teléfono fijo" class="secciones">
+						<input type="tel" id="movil" name="movil" placeholder="Celular" class="secciones">
+					</div>
+					<div class="title-section">
+						<i class="fa-solid fa-heart-pulse"></i>
+						<P>ESTADO DE SALUD</p>
+					</div>
+					<div class="seccion">
+						<select name="preexistencia" id="preexistencia" class="secciones1 especial">
 							<option hidden selected>Preexistencias</option>
 							<option value="Y">Si</option>
 							<option value="N">No</option>
 						</select>
-					</td>
-					<td>
-						<select name="discapacidad" id="discapacidad">
+						<select name="discapacidad" id="discapacidad" class="secciones1 especial">
 							<option hidden selected>Discapacidad</option>
 							<option value="Y">Si</option>
 							<option value="N">No</option>
 						</select>
-					</td>
-					<td>
-						<input type="text" name="alergia" id="alergia" placeholder="Alergias">
-					</td>
-				</tr>
-			</table>
-			<p>¿El paciente se ha realizado la prueba del covid con anterioridad y esta ha salido positiva?</p>
-			<input type="radio" id="radio_si" name="radio" value="Y"> <label for="radio_si">Si</label>
-			<input type="radio" id="radio_no" name="radio" value="N"> <label for="radio_no">No</label>
-			<p>¿El paciente ha tenido un contacto estrecho o cercano con una persona confirmada o sospechosa COVID-19 en
-				los ultimos 14 días?</p>
-			<input type="radio" id="radio_si2" name="radio2" value="Y"> <label for="radio_si2">Si</label>
-			<input type="radio" id="radio_no2" name="radio2" value="N"> <label for="radio_no2">No</label>
+						<input type="text" name="alergia" id="alergia" placeholder="Alergias" class="secciones1">
+					</div>
+					<p class="especial">¿El paciente se ha realizado la prueba del covid con anterioridad y esta ha
+						salido positiva?</p>
+						<div class="especial opcion">
+							<label for="radio_si">Si</label><input type="radio" id="radio_si" name="radio" value="Y">
+							<label for="radio_no">No</label><input type="radio" id="radio_no" name="radio" value="N">
+						</div>
+					<p class="especial">¿El paciente ha tenido un contacto estrecho o cercano con una persona confirmada
+						o sospechosa COVID-19 en
+						los ultimos 14 días?</p>
+						<div class="especial opcion">
+							<label for="radio_si2">Si</label><input type="radio" id="radio_si2" name="radio2" value="Y">
+							<label for="radio_no2">No</label><input type="radio" id="radio_no2" name="radio2" value="N">
+						</div>
+				</div>
+				<div>
+					<input type="submit" value="Guardar" class="boton-enviar">
+				</div>
 
-			<div>
-				<input type="submit" value="Enviar">
-			</div>
-
-		</form>
-	</div>
-	<footer>
-		<p>©2021 FORJA EMPRESAS</p>
-	</footer>
+			</form>
+		</div>
+		<footer class="footer2">
+			<p>©2021 FORJA EMPRESAS</p>
+		</footer>
 </body>
 
 </html>

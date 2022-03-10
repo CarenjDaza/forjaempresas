@@ -17,6 +17,7 @@ body {
 	--rojo:#A40101;
 	--azulclaro: rgb(44, 163, 171);
 	--plata: #c4c4c4;
+	--gris: #c4c4c4af;
 	--naranja:#f3610e;
 	--morado:#1d1b45;
 	--blanco:#ffffff;
@@ -344,6 +345,7 @@ body {
 		 color: var(--blanco);
 		 padding: 8px 33px; 
 		 border: 1px solid var(--negro);
+		 cursor: pointer;
 	 }
 	.butl{
 		margin-bottom: 20px ;
@@ -522,6 +524,7 @@ body {
 	   position: absolute;
 		left: 150px;
 		top: 230px;
+		cursor: pointer;
 	}
 	.boton-agregar a{
 		color: white;
@@ -534,6 +537,7 @@ body {
 		position: relative;
 		top: 85px;
 		right: 115px;
+		cursor: pointer;
 	}
 	.btn-buscar input{
 		width: 200px;
@@ -617,7 +621,7 @@ body {
 		color: var(--blanco);
 		text-align: center;
 		padding-top: 0.2px;
-		padding-bottom: 15px;
+		padding-bottom: 1	5px;
 		margin: 0;
 		position: relative;
 		top: 128px;
@@ -629,6 +633,7 @@ body {
 		border-radius: 5px;
 		margin:7px 0 7px 8px;	
 		font-size: 15px;
+		cursor: pointer;
 	}
 	
 	.btn-rojo{
@@ -639,6 +644,126 @@ body {
 		border-radius: 5px;
 		margin-right: 8px;
 		font-size: 15px;
+		cursor: pointer;
+	}
+	
+	/*registro*/
+	.registro{
+		border-radius: 8px;
+		background-color: var(--morado);
+		color: var(--blanco);
+		text-align: center;
+		font-size: 23px;
+		margin: 8px 0;
+		padding: 2px auto;
+	}
+	.registro h3{
+		margin: 0;
+		padding: 2px auto;
+	}
+	#form-register{
+		border: 2px solid var(--plata);
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		margin: 20px 2px;
+	}
+	.form-register{
+		border: 1px solid var(--morado);
+		background-color: var(--plata);
+		margin: 30px 30px 15px 30px;
+		padding: 20px;
+		border-radius: 10px;
+	}
+	.boton-enviar{
+		background-color: var(--naranja);
+		padding: 8px 30px;
+		border-radius: 5px;
+		border: none;
+		color: var(--blanco);
+		text-align: center;
+		margin-bottom: 80px;
+		cursor: pointer;
+	}
+	.footer2{
+		background-color: black;
+		color: var(--blanco);
+		text-align: center;
+		padding-top: 0.2px;
+		padding-bottom: 15px;
+		margin: 0;
+		position: relative;
+		top: 7px;
+	}
+	.inicio-form {
+		border-radius: 3px;
+		border: 2px solid var(--azulclaro);
+		padding: 5px 15px 5px 5px;
+		color: gray;
+		margin-bottom: 10px;
+	}
+	.inicio-form{
+		margin-right: 20px;
+	}
+	.inicio-form1 input-placeholder{
+		margin: 5px;
+	}
+	.inicio-form1{
+		border-radius: 3px;
+		border: 2px solid var(--azulclaro);
+		padding:5px 15px 5px 5px;
+		margin: 0px 0;
+	}
+	.title-section{
+			display: flex;
+			align-items: center;
+			margin-bottom: 11px;
+			background-color: var(--azulclaro);
+			width: 100%;
+			height: 30px;
+			color: white;
+			border: 1.5px solid #0d637e;
+			border-radius: 4px;
+		}
+		
+	.title-section p{
+			font-weight: normal;
+			margin: 0 auto;
+		}
+	.title-section i{
+			padding-left: 25px;
+			color: #000;
+		}
+	.titulo{
+		padding-left: 39%;
+		}
+	.secciones{
+		flex-basis: 45%;
+		margin: 12px 0;
+		border-radius: 3px;
+		border: 1px solid var(--azulclaro);
+		padding:5px 15px 5px 5px;
+	}
+	.seccion{
+		display: flex;
+		justify-content: space-around;
+		flex-wrap: wrap;
+	}
+	.especial{
+		color: gray;
+	}
+	.secciones1{
+		flex-basis: 28%;
+		margin: 12px 0;
+		border-radius: 3px;
+		border: 1px solid var(--azulclaro);
+		padding:5px 15px 5px 5px;
+	}
+	.opcion{
+		text-align: center;
+	}
+	.opcion label{
+		margin-right: 5px;
 	}
 	
 
