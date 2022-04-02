@@ -2,7 +2,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
 
-*{box-sizing: border-box;}
+*{box-sizing: border-box;
+	max-width: 100%;
+}
+
 h1{
 	font-family: 'Poppins', sans-serif;
 	font-size: 20px;
@@ -12,6 +15,7 @@ body {
 	background: #fff;
 	font-family: 'Poppins', sans-serif;
 	font-size: 16px;
+	width: 100%;
 }
 :root{
 	--rojo:#A40101;
@@ -26,37 +30,38 @@ body {
 
 }
 #header{
-	max-height: 800px;
-	height: 170px;
+	width: 100%;
 	display: flex;
-	flex-direction: row;
+	flex-direction: column;
+	align-items: center;
 }
 .logo1 i{
 	color: var(--naranja);
 	width: 90px;
-	margin-left: 70px;
+	margin-left:0px;
 }	
 .logo img{
 	width: 180px;
 	height: 80px;
-	position: relative;
-	top: 27px;
-	left: 50px;
+	margin: 30px auto 0 auto;
 }
 .header{
 	display: flex;
+	flex-direction: row;
 	align-items: center;
-	justify-content: space-around;
 }
 .location{
-	width: 360px;
+	width: 40%;
 	display:flex ;
-	align-items: flex-start;
-	position: relative;
-	left: -120px;
+	align-items: center;
+	justify-content: flex-start;
+	margin-left: 1.5rem;
 }
 .location p{
-	margin-top: 2px;
+	margin: 2px 0 2px 0;
+	width: 120px;
+	padding: 0;
+	font-size: 14px;
 }
 .location i{
 	background: var(--naranja);
@@ -67,10 +72,9 @@ body {
 	box-shadow: 4px 4px 7px var(--plata);
 }
 .phone{
-	width: 360px;
+	width: 50%;
 	display:flex ;
 	align-items: flex-start;
-	position: relative;
 }
 .phone p{
 	margin-top: 2px;
@@ -82,9 +86,8 @@ body {
 	padding: 5px 3px;
 	color: var(--blanco);
 	margin-right: 20px;
+	margin-left: 10px;
 	box-shadow: 4px 4px 7px var(--plata);
-	position: relative;
-	bottom: 8px;
 }
 .login{
 	display: flex;
@@ -110,13 +113,11 @@ body {
 	font-weight: bold;
 }
 .forja{
-	flex-basis: 40%;
 	display: flex;
 	align-items: center;
 	justify-content: center;
 }
 .inicio{
-	flex-basis: 60%;
 	max-width: 1200px;
 	width: 100%;
 	display: flex;
@@ -124,84 +125,93 @@ body {
 	margin-top: 30px;
 }
 .linea{
-	width: 950px;
+	margin: 10px;
+}
+.linea img{
+	width: 95%;
 }
 .boton{
-	margin-right: 50px;
+	margin: 20px auto 10px auto;
 }
 .covid{
 	background-image: url(../img/medico.png);
+	background-size: 100% 120%;
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
-	align-items: center;
-	width: auto;
-	height: 485px;
+	align-items: flex-start;
+	width: 100%;
+	height: 280px;
 }
 .covid h1{
 	color: var(--naranja);
-	font-size: 37px;
-	position:relative;
-	top: -40px;
-	right: 250px;
+	font-size: 18px;
+	width: 250px;
+	text-align: center;
+	animation: 5s fadein 1;
+}
+@keyframes fadein{
+    0%{opacity: 0;}
+    50%{opacity: 0.8;}
 }
 .covid h2{
-	font-size: 55px;
-	position:relative;
-	top: -100px;
-	right: 250px;
+	font-size: 25px;
+	margin: 0 4rem;
+	animation: 5s fadein 1;
+}
+@keyframes fadein{
+    0%{opacity: 0;}
+    50%{opacity: 0.8;}
 }
 .covid button{
-	position:relative;
-	top: -140px;
-	right: 250px;
-}
+	margin-right: 8rem;
+} 
 .franja{
-	width: 100px;
-	height: 60px;
+	width: 100%;
+	height: 30px;
+	margin-bottom: 0;
 }
 .franja img{
-	flex-basis: 100%;
-	position: absolute;
 	width: 100%;
-	height: 60px;
+	height: 30px;
 }
 /*seccion sintomas*/
 .signos{
 	display: flex;
+	flex-direction: row;
+	justify-content: center;
 	color: var(--azulclaro);
+}
+.signos h2{
+	width: 270px;
 }
 .signos img{
 	width: 28px;
 	margin-right: 10px;
+	margin-top: 0;
 }
 .fondosintomas{
 	background-color: rgba(255, 255, 255, 0.9);
 	display: flex;
-	flex-wrap: wrap;
-	height: 370px;
-	
+	flex-direction: column;
+	height: 100%;
 }
 .transpsintomas{
 	background-image: url(../img/covid.jpeg);
-	height: 370px;
-	
+	height: 100%;	
 }
 .sintomas{
-	flex-basis: 57%;
 	display: flex;
 	flex-direction: column;
 	align-items: center;
 	margin-top: 10px;
-
 }
 .precaucion{
-	flex-basis: 43%;
 	display: flex;
 	flex-direction: column;
 	align-items: flex-start;
 	margin-top: 10px;
-	
+	margin-left: 1.7rem;
 }
 .quehacer{
 	display: flex;
@@ -212,8 +222,7 @@ body {
 	margin-right: 10px;	
 }
 .chulos{
- 	position: relative;
- 	left: -40px;
+	justify-content: center;
 }
 .check{
 	margin: 15px 0;
@@ -222,21 +231,22 @@ body {
 	width: 20px;
 	margin-right: 8px;
 }
+.oms{	
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
 .oms img{
-	width:120px;
-	position: relative;
-	left: 150px;
-	margin: 10px 0;
+	width:100px;
 }
 .oms p{
+	width: 85%;
 	text-align: justify;
-	margin: 10px 130px 0 0;
-	font-size: 17px;
-	line-height: 1.4;
+	margin: 5px ;
+	font-size: 14px;
 }
 .curso{
-	position: relative;
-	right: 50px;
 	margin-bottom: 30px;
 }
 /*seccion enlaces*/
@@ -247,16 +257,15 @@ body {
 	color: var(--blanco);
 	background-color:var(--morado);
 }
-.recomendacion p{
-	padding: 8px 0 8px 10px;
-}
-.recomendacion1{
+.recomendacion{
 	color: var(--blanco);
 	background-color:var(--morado);
 }
-.recomendacion1 p{
+.recomendacion p{
 	padding: 8px 0 8px 10px;
 	margin-top: 0;
+	font-size: 15px;
+
 }
 /*footer*/
 .footer{
@@ -264,7 +273,7 @@ body {
 	color: var(--blanco);
 	text-align: center;
 	padding-top: 0.3px;
-	padding-bottom: 20px;
+	padding-bottom: 15px;
 	margin-bottom: 3px;
 }
 /*login*/
@@ -765,8 +774,120 @@ body {
 		margin-right: 5px;
 	}
 	
+@media screen and (min-width: 768px){
+	#header{
+		display: flex;
+		flex-direction: row;
+		align-items: center;
+		height: 100%;
+}
+	.logo1 i{
+	width: 90px;
+	margin-left: 15px;
+}	
+	.logo img{
+	margin: 30px auto 0 15PX;
+	width: 300px;
+}
+	.inicio{
+	flex-direction:row ;
+}
+.location{
+	width: 50%;
+	margin-left: 2rem;
+}
+.location p{
+	width: 130px;
+}
+.boton{
+	margin: 10px auto 10px 1rem;
+}
+.covid{
+	align-items: center;
+}
+.covid h1{
+	font-size: 25px;
+	width: 500px;
+	margin-right: 10rem;
+	margin-bottom: 0;
+}
+.covid h2{
+	font-size: 40px;
+	margin-right: 15rem;
+	margin-top: 0;
+}
+.covid button{
+	margin-left: 13rem;
+} 
+.fondosintomas{
+	flex-direction: row;
+	height: 100%;
+}
+.sintomas{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	flex-basis: 50%;
+}
+.precaucion{
+	flex-basis: 50%;
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+}
+@media screen and (min-width: 1024px){
+	.logo img{
+	width: 350px;
+}
+.header{
+	width: 100%;
+}
+.location{
+	width: 70%;
+}
+.location p{
+	width: 250px;
+}
+.boton{
+	margin: 10px auto 10px 1rem;
+}
+.phone{
+	width: 30%;
+}
+.boton{
+	margin-right: 2rem;
+}
+.covid h1{
+	font-size: 30px;
+	margin-left: -2rem;
+}
+.covid h2{
+	font-size: 45px;
+	margin-left: 10px;
+}
+.covid button{
+	margin-right: 26rem;
+} 
+@media screen and (min-width: 1200px){
 
-	
-		
-		
-
+.location p{
+		width: 250px;
+		font-size: 18px;
+}
+.phone p{
+		font-size: 18px;
+}
+.covid{
+	height: 70vh;
+}
+.covid h1{
+	font-size: 37px;
+	width: 600px;
+}
+.covid h2{
+	font-size: 55px;
+	margin-left: 10px;
+}
+.covid button{
+	margin-right: 27rem;
+}
