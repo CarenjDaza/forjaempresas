@@ -695,16 +695,19 @@ body {
 		display: flex;
 		flex-direction: column;
 		align-items: center;
-		margin: 20px 2px;
+		margin: 20px auto;
+		width: 100%;
 	}
 	.form-register{
-		display: flex;
-		flex-direction: column;
 		border: 1px solid var(--morado);
 		background-color: var(--plata);
 		margin: 30px 30px 15px 30px;
 		padding: 20px;
 		border-radius: 10px;
+	}	
+	.form2{
+		display: flex;
+		flex-direction: column;
 	}
 	.boton-enviar{
 		background-color: var(--naranja);
@@ -715,6 +718,12 @@ body {
 		text-align: center;
 		margin-bottom: 80px;
 		cursor: pointer;
+		animation: enviar 3s 1 2s;
+	}
+	@keyframes enviar{
+		20%{transform: rotate(-3deg); transform: scale(0.5);}
+		30%, 70%{ transform: scale(0.9); transform: rotate(3deg);}
+		50%, 90%{ transform: scale(0.9); transform: rotate(-3deg);}
 	}
 	.footer2{
 		background-color: black;
@@ -971,6 +980,26 @@ font-size: 15px;
 .btn-buscar button{
 	height: 30px;
 }
+/*registro*/
+.boton-enviar{
+	width: 250px;
+	height: 50px;
+	font-size: 20px;
+}
+.form2{
+	display: flex;
+	flex-direction: row;
+}
+.inicio-form{
+	width: 30%;
+	height: 38px;
+	margin-right: 25px;
+	margin-left: 10px;
+}
+.inicio-form1{
+	width: 30%;
+	height: 38px;
+}
 @media screen and (min-width: 1024px){
 .logo img{
 	width: 350px;
@@ -1060,6 +1089,17 @@ font-size: 15px;
 	padding: 8px 15px;
 	font-size: 20px;	
 	}
+/*registro*/
+.especial{
+	font-size: 20px;
+}
+.opcion label{
+	font-size: 25px;
+	margin: 0 20px;
+}
+.boton-enviar{
+	margin-top: 20px;
+}
 @media screen and (min-width: 1200px){
 
 .location p{
@@ -1119,4 +1159,14 @@ font-size: 15px;
 }
 .btn-rojo{
 	font-size: 16px;
+}
+/*registro*/
+.boton-enviar{
+	margin-top: 30px;
+	width: 350px;
+	height: 70px;
+	font-size: 25px;
+}
+.title-section p{
+	font-size: 18px;
 }
