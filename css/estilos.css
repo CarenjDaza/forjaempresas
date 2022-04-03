@@ -150,12 +150,6 @@ body {
 	text-align: center;
 	animation: aparecer 5s 1 5s;
 }
-keyframes aparecer{
-    0%{opacity: 0;}
-	25%{opacity: 0.5;}
-    50%{opacity: 0.8;}
-	75%{opacity: 0.9;}
-}
 .covid h2{
 	font-size: 25px;
 	margin: 0 4rem;
@@ -522,7 +516,7 @@ keyframes aparecer{
 	width: 100%;
 }
 
-	/* pacientes */
+/* pacientes */
 
 	.headerpaciente{
 		background-color: var(--negro);
@@ -595,7 +589,6 @@ keyframes aparecer{
 	}
 	#paciente{
 		height: 100%;
-		max-height: 800px;
 	}
 	.paciente h1{
 		text-align: center;
@@ -603,11 +596,17 @@ keyframes aparecer{
 		color: var(--morado);
 		text-decoration: underline;
 		margin: 5rem auto;
+		animation: paciente 3s linear 1s 1;
 	}
-	.tablepaciente{
-		display: flex;
-		justify-content: center;
-		align-items: flex-end;
+	@keyframes paciente{
+		0% {transform: translateY(-800%);}
+		100% {transform: translateY(0%);}
+	}
+	.tablepaciente {
+			width: 100%;
+			margin-bottom: 15px;
+			overflow-y: hidden;
+			-ms-overflow-style: -ms-autohiding-scrollbar;
 	}
 	.tablepaciente table{
 		border: 2px solid var(--azulclaro);
@@ -618,8 +617,8 @@ keyframes aparecer{
 		border: 1px solid var(--azulclaro);
 		background-color: var(--morado);
 		color: var(--blanco);
-		padding: 17px 45px;
-		font-size: 17px;
+		padding: 5px 5px;
+		font-size: 12px;
 	}
 	.tablepaciente tr{
 		border: 1px solid var(--azulclaro);
@@ -629,21 +628,20 @@ keyframes aparecer{
 		border: 1px solid var(--azulclaro);
 		background-color: var(--plata);
 		text-align: center;
-		font-size: 15px;
-		
+		font-size: 10px;	
+	}
+	.tablepaciente button{
+		margin: 5px ;
 	}
 	.registro{
 		padding: 10px 15px;
 	}
-	
 	.documento{
 		padding: 10px 28px 10px 28px;
 	}
-	
 	.nombre{
 		padding: 10px 80px 10px 80px;
 	}
-	
 	.edad{
 		padding: 10px 13px 10px 13px;
 	}
@@ -660,10 +658,10 @@ keyframes aparecer{
 	.btn-azul{
 		background-color: var(--azulclaro);
 		border: 1px solid var(--azulclaro);
-		padding: 4px 8px;
+		padding: 2px 4px;
 		border-radius: 5px;
-		margin:7px 0 7px 8px;	
-		font-size: 15px;
+		margin-bottom: 5px;
+		font-size: 12px;
 		cursor: pointer;
 	}
 	
@@ -674,7 +672,7 @@ keyframes aparecer{
 		padding: 4px 8px;
 		border-radius: 5px;
 		margin-right: 8px;
-		font-size: 15px;
+		font-size: 10px;
 		cursor: pointer;
 	}
 	
@@ -700,6 +698,8 @@ keyframes aparecer{
 		margin: 20px 2px;
 	}
 	.form-register{
+		display: flex;
+		flex-direction: column;
 		border: 1px solid var(--morado);
 		background-color: var(--plata);
 		margin: 30px 30px 15px 30px;
@@ -729,21 +729,18 @@ keyframes aparecer{
 	.inicio-form {
 		border-radius: 3px;
 		border: 2px solid var(--azulclaro);
-		padding: 5px 15px 5px 5px;
+		padding: 5px 0px 5px 5px;
 		color: gray;
 		margin-bottom: 10px;
-	}
-	.inicio-form{
-		margin-right: 20px;
-	}
-	.inicio-form1 input-placeholder{
-		margin: 5px;
+		width: 100%;
+		margin-right: 5px;
 	}
 	.inicio-form1{
 		border-radius: 3px;
 		border: 2px solid var(--azulclaro);
-		padding:5px 15px 5px 5px;
-		margin: 0px 0;
+		padding:5px 0px 5px 5px;
+		width: 100%;
+		margin-bottom: 15px;
 	}
 	.title-section{
 			display: flex;
@@ -765,6 +762,12 @@ keyframes aparecer{
 			padding-left: 25px;
 			color: #000;
 		}
+	.title-section2 i{
+		margin-right: 5px;
+	}
+	.title-section2 p{
+		font-size: 15px;
+	}
 	.titulo{
 		padding-left: 39%;
 		}
@@ -799,21 +802,21 @@ keyframes aparecer{
 	
 	
 @media screen and (min-width: 768px){
-	#header{
+#header{
 		display: flex;
 		flex-direction: row;
 		align-items: center;
 		height: 100%;
 }
-	.logo1 i{
+.logo1 i{
 	width: 90px;
 	margin-left: 15px;
 }	
-	.logo img{
+.logo img{
 	margin: 30px auto 0 15PX;
 	width: 300px;
 }
-	.inicio{
+.inicio{
 	flex-direction:row ;
 }
 .location{
@@ -943,6 +946,31 @@ keyframes aparecer{
 	height: 153px;
 	margin-right: -11rem;
 }
+/*pacientes*/
+.botones-pac{
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	margin: 2rem 5rem 0 5rem;
+}
+.paciente h1{
+	margin-top: 2rem;
+	font-size: 25px;
+}	
+.tablepaciente th{
+padding: 8px 15px;
+font-size: 15px;
+}
+.tablepaciente td{
+padding: 5px 7px;
+font-size: 15px;	
+}
+.btn-buscar input{
+	height: 30px;
+}
+.btn-buscar button{
+	height: 30px;
+}
 @media screen and (min-width: 1024px){
 .logo img{
 	width: 350px;
@@ -1020,6 +1048,18 @@ keyframes aparecer{
 	height: 153px;
 	margin-right: -21rem;
 }
+/*pacientes*/
+.tablepaciente table{
+	margin-left: 20px;
+}
+.tablepaciente th{
+	padding: 8px 20px;
+	font-size: 22px;
+	}
+.tablepaciente td{
+	padding: 8px 15px;
+	font-size: 20px;	
+	}
 @media screen and (min-width: 1200px){
 
 .location p{
@@ -1054,4 +1094,29 @@ keyframes aparecer{
 .guerreros{
 	height: 153px;
 	margin-right: -33rem;
+}
+/*pacientes*/
+.tablepaciente table{
+	margin: 20px auto;
+}
+.botones-pac{
+	margin: 2rem 6rem 0 6rem;
+}
+.boton-agregar{
+	height: 40px;
+}
+.btn-buscar input{
+	height: 40px;
+}
+.btn-buscar button{
+	height: 40px;
+}
+.paciente h1{
+	font-size: 40px;
+}
+.btn-azul{
+	font-size: 18px;
+}
+.btn-rojo{
+	font-size: 16px;
 }
