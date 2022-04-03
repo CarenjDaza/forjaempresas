@@ -319,15 +319,15 @@ body {
 		display: flex;
 		flex-direction: column;
 		align-items: center;
-		margin-top: 40px;
+		margin-top: 20px;
 		background-color: var(--blanco);
 		border-radius: 50px;
 		box-shadow: 3px 3px 5px var(--negro);
 	 }
 	 .head{
-		 width: 100%;
+		width: 100%;
 		background-color: var(--azulcielo);
-		padding: 30px 30px;
+		padding: 20px 20px;
 		text-align: center;
 		border-radius: 50px 50px 0 0;
 	}
@@ -336,7 +336,6 @@ body {
 		 flex-direction: column;
 		 text-align: center;
 		 padding-bottom: 20px;
-		 line-height: 2;
 	 }
 	 .form-group label{
 		 font-size: 20px;
@@ -361,7 +360,7 @@ body {
 		 padding: 8px 33px; 
 		 border: 1px solid var(--negro);
 		 cursor: pointer;
-		 margin-bottom: 20px;
+		 margin-bottom: 10px;
 	 }
 	/*dashboard*/
 	.main{
@@ -718,7 +717,7 @@ body {
 		text-align: center;
 		margin-bottom: 80px;
 		cursor: pointer;
-		animation: enviar 3s 1 2s;
+		animation: enviar 3s 3 2s;
 	}
 	@keyframes enviar{
 		20%{transform: rotate(-3deg); transform: scale(0.5);}
@@ -872,11 +871,12 @@ body {
 	align-items: flex-start;
 }
 /*login*/
-.body{
+#login{
+	margin-top:0.2rem;
 	height: 100%;
 }
-#login{
-	margin-top: 2rem;
+.head img{
+	width: 120px;
 }
 .buttonlogin{
 	width: 250px;
@@ -889,7 +889,7 @@ body {
 }
 .form-login{
 	width: 70%;
-	height: 750px;
+	height: 70%;
  }
 .form-group label{
 	font-size: 30px;
@@ -898,23 +898,27 @@ body {
 	height: 60px;
 	width: 350px;
 }
+.head{
+	height: 250px;
+}
 .head p{
-	font-size: 40px;
+	font-size: 30px;
 }
 .head img{
 	width: 80%;
 	margin-top: 10px;
 }
 .section2{
-	margin-top: 25px;
+	margin-top: 20px;
 }
 .link{
 	font-size: 22px;
 }
 .btn-enviar{
 	width: 150px;
-	height: 60px;
-	font-size: 22px;
+	height: 50px;
+	font-size: 25px;
+	margin-bottom: 50px;
 }
 /*dashboard*/
 .main{
