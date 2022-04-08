@@ -394,13 +394,13 @@ body {
 		margin: 0;
 	}
 	.endsesion:hover{
-		animation: menudash 3s 1 1s linear;
+		animation: menudash 3s 1 0s linear;
 	}
 	.users:hover{
-	animation: menudash 3s 1 1s linear;
+	animation: menudash 3s 1 0s linear;
 	}
 	.vacunation:hover{
-	animation: menudash 3s 1 1s linear;
+	animation: menudash 3s 1 0s linear;
 	}
 	@keyframes menudash{
 	50%{transform: translateX(-120%);}
