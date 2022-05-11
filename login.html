@@ -7,6 +7,7 @@
 	<link rel="stylesheet" type="text/css" href="css/estilos.css">
 	<link rel="stylesheet" type="text/css" href="css/normalize.css">
 	<link rel="icon" type="image/x-icon" href="img/jeringa.png">
+	<script src="http://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 	<title>Forja Empresas</title>
 </head>
 
@@ -15,7 +16,7 @@
 		<div class="butl">
 			<button class="buttonlogin"><a href="index.html" target="_self">Volver al inicio</a></button>
 		</div>
-			<form action="dashboard.html" target="_self" class="form-login">
+			<form action="" target="_self" class="form-login">
 				<section class="head">
 					<img src="img/logoforja.png" alt="logo Forja Empresas">
 					<p>Contigo, siempre!</p>
@@ -34,9 +35,11 @@
 					<div class="link">
 						<p><a href="index.html">¿Olvidaste tu contraseña?</a></p>
 					</div>
-					<input type="submit" id="send" name="send" value="Ingresar" class="btn-enviar">
+					<input onclick="inicio(event)" type="submit" id="send" name="send" value="Ingresar" class="btn-enviar">
 			</form>
 	</section>
+	
+	<script src="js/main.js"></script>
 </body>
 
 </html>

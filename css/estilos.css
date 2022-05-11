@@ -808,7 +808,46 @@ body {
 		margin-right: 5px;
 	}
 	
+.estado{
+		width: 100%;
+		display: grid;
+		grid-template-columns: 100%;
+		justify-content: center;
+		align-items: center;
+		margin: 10px;
+}
+.estado1{
+	width: 100%;
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+}
+.boton-agregar1{
+	background-color: var(--naranja);
+	padding: 6px 10px;
+	border-radius: 5px;
+	border: none;
+	cursor: pointer;
+	margin: 20px 8px 20px 0;
+	width: 130px;
+}
+.boton-agregar1 a{
+	color: white;
+	text-decoration-line: none;
+}
+.secciones1{
+	flex-basis: 80%;
+	margin: 12px 0;
+	border-radius: 3px;
+	border: 1px solid var(--azulclaro);
+	padding:5px 15px 5px 5px;
 	
+}
+.label{
+	flex-basis: 30%;
+}
+
+
 @media screen and (min-width: 768px){
 #header{
 		display: flex;
@@ -1175,5 +1214,4 @@ font-size: 15px;
 	font-size: 25px;
 }
 .title-section p{
-	font-size: 18px;
-}
+	font-size: 18px;}

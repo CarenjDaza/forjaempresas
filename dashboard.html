@@ -6,6 +6,7 @@
 	<link rel="stylesheet" type="text/css" href="css/estilos.css">
 	<link rel="stylesheet" type="text/css" href="css/normalize.css">
 	<script src="https://kit.fontawesome.com/74a1aab293.js" crossorigin="anonymous"></script>
+	<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 	<link rel="icon" type="image/x-icon" href="img/jeringa.png">
 	<title>Forja Empresas</title>
 </head>
@@ -39,11 +40,11 @@
 		</div>
 		<div class="cuerpo">
 			<h1>BIENVENIDOS</h1>
-				<form action="pacientes.html" target="_self" class="busqueda">
+				<form action="" target="_self" class="busqueda">
 				<input type="numeric" name="document" id="document" placeholder="Digite el numero de documento">
 				<div>
-				<button type="submit">
-					<a href="pacientes.html"><i class="fa-solid fa-magnifying-glass" fa="6x"></i></a>
+				<button type="submit" onclick="documento(event)">
+					<a href=""><i class="fa-solid fa-magnifying-glass" fa="6x"></i></a>
 				</button>
 				<button type="submit">
 					<a href="dashboard.html"><i class="fa-solid fa-arrow-rotate-right"></i></a>
@@ -54,8 +55,9 @@
 		
 		<img src="img/guerreros.png" alt="logo guerreros" class="guerreros">
 		<img src="img/franja.svg" alt="Franjalogo" class="franja1"> 
-		
 	</section>
+	
+	<script src="js/dashboard.js"></script>
 </body>
 </html>
 

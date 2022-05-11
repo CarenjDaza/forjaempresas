@@ -28,19 +28,19 @@
 			<form action="#" id="form-register">
 				<div class="form-register">
 					<div class="form2">
-					<input type="date" id="calendar" name="calendar" class="inicio-form">
-					<input type="text" name="register" id="register" placeholder="N registro" class="inicio-form1">
+					<input type="date" id="calendar" name="calendar" class="inicio-form" required>
+					<input type="text" name="register" id="register" placeholder="N registro" class="inicio-form1" pattern="[0-9]+>
 					</div>
 					<div class="title-section">
 						<i class="fa-solid fa-user"></i>
 						<P>DATOS DEL PACIENTE</p>
 					</div>
 					<div class="seccion">
-						<input type="text" id="name" name="name" placeholder="Escribe tu nombre" class="secciones">
-						<input type="text" id="lastname" name="lastname" placeholder="Apellidos" class="secciones">
+						<input type="text" id="name" name="name" placeholder="Escribe tu nombre" pattern="[a-z A-Z]{1,40} class="secciones" required>
+						<input type="text" id="lastname" name="lastname" placeholder="Apellidos" pattern="[a-z A-Z]{1,40} class="secciones" required>
 						<input type="text" id="identify" name="identify" placeholder="Número de identificación"
-							class="secciones">
-						<select name="typeID" id="typeID" class="secciones especial">
+							class="secciones" required pattern="[0-9]+>
+						<select name="typeID" id="typeID" class="secciones especial" required>
 							<option hidden selected>Tipo de documento</option>
 							<option value="CC">Cedula de ciudadania</option>
 							<option value="PS">Pasaporte</option>
@@ -48,15 +48,15 @@
 							<option value="TI">Tarjeta de identidad</option>
 							<option value="RC">Registro civil</option>
 						</select>
-						<input type="date" id="calendar2" name="calendar2" class="secciones especial">
-						<input type="text" id="age" name="age" placeholder="Edad" class="secciones">
+						<input type="date" id="calendar2" name="calendar2" class="secciones especial" required>
+						<input type="text" id="age" name="age" placeholder="Edad" class="secciones" required pattern="[0-9]+>
 					</div>
 					<div class="title-section2 title-section">
 						<i class="fa-solid fa-location-dot"></i>
 						<p>INFORMACIÓN DE CONTACTO</p>
 					</div>
 					<div class="seccion">
-						<select name="Departamento" id="Departamento" class="secciones especial">
+						<select name="Departamento" id="Departamento" class="secciones especial" required>
 							<option hidden selected>Departamento de residencia</option>
 							<option value="Cundinamarca">Cundinamarca</option>
 							<option value="Choco">Choco</option>
@@ -64,7 +64,7 @@
 							<option value="Tolima">Tolima</option>
 							<option value="Meta">Meta</option>
 						</select>
-						<select name="Municipio" id="Municipio" class="secciones especial">
+						<select name="Municipio" id="Municipio" class="secciones especial" required>
 							<option hidden selected>Municipio de residencia</option>
 							<option value="Bogota">Bogotá</option>
 							<option value="Caceres">Caceres</option>
@@ -73,26 +73,26 @@
 							<option value="Soacha">Soacha</option>
 						</select>
 						<input type="text" id="address" name="address" placeholder="Dirección" class="secciones">
-						<input type="email" id="email" name="email" placeholder="Correo" class="secciones">
-						<input type="tel" id="phone" name="phone" placeholder="Teléfono fijo" class="secciones">
-						<input type="tel" id="movil" name="movil" placeholder="Celular" class="secciones">
+						<input type="email" id="email" name="email" placeholder="Correo" class="secciones" required>
+						<input type="tel" id="phone" name="phone" placeholder="Teléfono fijo" class="secciones" pattern="[0-9]+>
+						<input type="tel" id="movil" name="movil" placeholder="Celular" class="secciones" required pattern="[0-9]+>
 					</div>
 					<div class="title-section">
 						<i class="fa-solid fa-heart-pulse"></i>
 						<P>ESTADO DE SALUD</p>
 					</div>
 					<div class="seccion">
-						<select name="preexistencia" id="preexistencia" class="secciones1 especial">
+						<select name="preexistencia" id="preexistencia" class="secciones1 especial" required>
 							<option hidden selected>Preexistencias</option>
 							<option value="Y">Si</option>
 							<option value="N">No</option>
 						</select>
-						<select name="discapacidad" id="discapacidad" class="secciones1 especial">
+						<select name="discapacidad" id="discapacidad" class="secciones1 especial" required>
 							<option hidden selected>Discapacidad</option>
 							<option value="Y">Si</option>
 							<option value="N">No</option>
 						</select>
-						<input type="text" name="alergia" id="alergia" placeholder="Alergias" class="secciones1">
+						<input type="text" name="alergia" id="alergia" placeholder="Alergias" class="secciones1" required>
 					</div>
 					<p class="especial">¿El paciente se ha realizado la prueba del covid con anterioridad y esta ha
 						salido positiva?</p>
@@ -114,6 +114,7 @@
 
 			</form>
 		</div>
+	</section>
 		<footer class="footer2">
 			<p>©2021 FORJA EMPRESAS</p>
 		</footer>

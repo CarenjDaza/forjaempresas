@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="es-Es">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" type="text/css" href="css/estilos.css">
+	<link rel="stylesheet" type="text/css" href="css/normalize.css">
+	<script src="https://kit.fontawesome.com/74a1aab293.js" crossorigin="anonymous"></script>
+	<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+	<link rel="icon" type="image/x-icon" href="img/jeringa.png">
+	<title>Forja Empresas</title>
+</head>
+<body>
+    <body>
+        <section class="headerpaciente">
+            <img src="img/logoforja.png" alt="logo Forja Empresas">
+            <div class="iniciopac">
+                <a href="dashboard.html"><img src="img/house.png" alt="Home"></a>
+                <a href="index.html"><img src="img/power-off.png" alt="logoff"></a>
+            </div>
+        </section id="paciente">
+        <img src="img/franja.png" alt="Franjalogo" class="franja2">
+        <section class="estado">
+            <p>Estado: Activo</p>
+           
+            <div class="estado1">
+                <button class="boton-agregar1"><a href="#" id="guardar"  >Guardar cambios</a></button>
+                <button class="boton-agregar1"><a href="/dashboard.html" >Cerrar</button></a>
+            </div>
+        </section>
+        <section>
+            <div class="registro">
+                <h3>INFORMACION DEL PACIENTE</h3>
+            </div>
+            <div>
+                <form action="#" id="form-register">
+                    <div class="form-register">
+                        <div class="form2">
+                        <input type="date" id="calendar" name="calendar" class="inicio-form" required>
+                        <input type="text" name="register" id="register" placeholder="N registro" class="inicio-form1" pattern="[0-9]+>
+                        </div>
+                        <div class="title-section">
+                            <i class="fa-solid fa-user"></i>
+                            <P>DATOS DEL PACIENTE</p>
+                        </div>
+                        <div class="seccion">
+                            <input type="text" id="name" name="name" placeholder="Escribe tu nombre" pattern="[a-z A-Z]{1,40} class="secciones" required>
+                            <input type="text" id="lastname" name="lastname" placeholder="Apellidos" pattern="[a-z A-Z]{1,40} class="secciones" required>
+                            <input type="text" id="identify" name="identify" placeholder="Número de identificación" class="secciones" pattern="[0-9]+ required>
+                            <select name="typeID" id="typeID" class="secciones especial">
+                                <option hidden selected>Tipo de documento</option>
+                                <option value="CC">Cedula de ciudadania</option>
+                                <option value="PS">Pasaporte</option>
+                                <option value="CE">Cedula de extranjeria</option>
+                                <option value="TI">Tarjeta de identidad</option>
+                                <option value="RC">Registro civil</option>
+                            </select>
+                            <input type="date" id="calendar2" name="calendar2" class="secciones especial" required>
+                            <input type="text" id="age" name="age" placeholder="Edad" class="secciones" required pattern="[0-9]+>
+                            <select name="eps" id="typeID" class="secciones especial" required>
+                                <option hidden selected>EPS</option>
+                                <option value="0">Salud Colmena</option>
+                                <option value="1">Salud Total</option>
+                                <option value="2">Cafesalud</option>
+                                <option value="3">Sanitas</option>
+                                <option value="4">Compensar</option>
+                                <option value="5">Saludcoop</option>
+                                <option value="6">Coomeva</option>
+                                <option value="7">Famisanar</option>
+                                <option value="8">Cruz Blanca</option>
+                            </select>
+                        </div>
+                        <div class="title-section2 title-section">
+                            <i class="fa-solid fa-syringe"></i>
+                            <p>INFORMACIÓN DE VACUNACION</p>
+                        </div>
+                        <div class="seccion">
+                                <select name="sedes" id="sedes" class="secciones especial" required>
+                                    <option disabled selected>Sede</option>
+                                    <option value="0">Kennedy</option>
+                                    <option value="1">Bosa</option>
+                                    <option value="2">Suba</option>
+                                    <option value="3">Engativa</option>
+                                    <option value="4">Centro</option>
+                                </select>
+        
+                                <select name="sedes" id="quienLoVacuno" class="secciones especial" required>
+                                    <option disabled selected>¿Quien lo vacunó?</option>
+                                    <option value="0">Caren Daza</option>
+                                    <option value="1">Felipe Sierra</option>
+                                    <option value="2">Samuel Castro</option>
+                                </select>
+                                <input name="idProfesional" id="idProfesional" type="text" placeholder="ID del Profesional"
+                                    required pattern="[0-9]{1,10}>
+        
+                                <select name="dosis" id="dosis" class="secciones1 especial" required>
+                                    <option disabled selected>Dosis</option>
+                                    <option value="0">Primera vez</option>
+                                    <option value="1">Segunda vez</option>
+                                    <option value="2">Tercera vez</option>
+                                    <option value="3">Refuerzo</option>
+                                </select>
+                            <select name="biologico" id="biologico" class="secciones1 especial" required>
+                                <option disabled selected>Biologico</option>
+                                <option value="0">Pfizer</option>
+                                <option value="1">SinoVac</option>
+                                <option value="2">Jannsen</option>
+                                <option value="3">Moderna</option>
+                                <option value="4">AstraZeneca</option>
+                            </select>
+                            <div class=label>
+                            <label for="calendar3" >Fecha 1ra Dosis</label>
+                            <input name="fechaDosis" id="calendar3" type="date" name="calendar2" class="secciones1 especial" required>
+                            </div>
+                            <div class=label>
+                            <label for="calendar4">Fecha 2ra Dosis</label>
+                            <input name="fecha2Dosis" id="calendar4" type="date" name="calendar2" class="secciones1 especial" required>
+                            </div>
+                            <div class=label>
+                            <label for="calendar5">Fecha 3ra Dosis </label>
+                            <input name="fecha3Dosis" id="calendar5" type="date" name="calendar2" class="secciones1 especial" required>
+                            </div>
+        
+                        </div>
+        
+                        <div class="observaciones">
+                            <textarea name="observacion" id="observacion" cols="150" rows="7"
+                                placeholder="Observaciones adicionales"></textarea>
+                        </div>
+                        
+                    </div>
+    
+                </form>
+            </div>
+        </section>
+            <footer class="footer2">
+                <p>©2021 FORJA EMPRESAS</p>
+            </footer>
+
+<-->
+
+        
+</body>
+</html>
