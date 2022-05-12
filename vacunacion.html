@@ -24,8 +24,8 @@
             <p>Estado: Activo</p>
            
             <div class="estado1">
-                <button class="boton-agregar1"><a href="#" id="guardar"  >Guardar cambios</a></button>
-                <button class="boton-agregar1"><a href="/dashboard.html" >Cerrar</button></a>
+                <button class="boton-agregar1"><a href="pacientes.html" id="guardar">Guardar cambios</a></button>
+                <button class="boton-agregar1"><a href="dashboard.html">Cerrar</button></a>
             </div>
         </section>
         <section>
@@ -46,7 +46,7 @@
                         <div class="seccion">
                             <input type="text" id="name" name="name" placeholder="Escribe tu nombre" pattern="[a-z A-Z]{1,40} class="secciones" required>
                             <input type="text" id="lastname" name="lastname" placeholder="Apellidos" pattern="[a-z A-Z]{1,40} class="secciones" required>
-                            <input type="text" id="identify" name="identify" placeholder="Número de identificación" class="secciones" pattern="[0-9]+" required>
+                            <input type="number" id="identify" name="identify" placeholder="Número de identificación" class="secciones" pattern="[0-9]+" required>
                             <select name="typeID" id="typeID" class="secciones especial">
                                 <option hidden selected>Tipo de documento</option>
                                 <option value="CC">Cedula de ciudadania</option>
@@ -56,7 +56,7 @@
                                 <option value="RC">Registro civil</option>
                             </select>
                             <input type="date" id="calendar2" name="calendar2" class="secciones especial" required>
-                            <input type="text" id="age" name="age" placeholder="Edad" class="secciones" required pattern="[0-9]+">
+                            <input type="number" id="age" name="age" placeholder="Edad" class="secciones" required pattern="[0-9]+">
                             <select name="eps" id="typeID" class="secciones especial" required>
                                 <option hidden selected>EPS</option>
                                 <option value="0">Salud Colmena</option>

@@ -6,7 +6,6 @@ function inicio(e){
     let usuario="Admin";
     let password="Kuepa2022";
     if(document.getElementById('user').value==usuario && document.getElementById('password').value==password){
-        //alert("Los datos son correctos");
         window.setTimeout(() => { window.location.href = "dashboard.html" }, 0);
     }
     else if(document.getElementById('user').value!=usuario && document.getElementById('password').value==password){

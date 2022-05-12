@@ -1,3 +1,6 @@
+
+
+
 //validacion documento usuario
 function documento(e){
     e.preventDefault();
